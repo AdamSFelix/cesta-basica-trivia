@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Cesta Básica Trivia</title>
+</head>
+<body>
+  <div id="start_screen" class="screen">
+    <img id="title_img" src="images/title_start_screen.png" alt="título cesta básica trivia">
+    <img id="hero_img" src="images/cesta_basica.png" alt="cesta básica">
+    <button id="start_btn" onclick="startGame()">COMEÇAR</button>
+  </div>
+
+  <div id="game_screen" class="screen">
+    <div class="game_div">
+      <h1>Qual é esse alimento?</h1>
+    </div>
+    <div class="game_div">
+      <h2>Dicas</h2>
+      <div id="tips" class="game_container">
+        <div class="tip_card">
+          <p>Classificação:</p>
+          <div class="food_tip">Carboidratos</div>
+        </div>
+        <div class="tip_card">
+          <p>Processamento</p>
+          <div class="food_tip">Mínimo</div>
+        </div>
+        <div class="tip_card">
+          <p>Caloria / 100g</p>
+          <div class="food_tip">125 calorias</div>
+        </div>
+        <div class="tip_card">
+          <p>Tem na cesta básica?</p>
+          <div class="food_tip">Sim</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game_div">
+      <h2>Sua resposta?</h2>
+      <div id="answers" class="game_container">
+        <div class="answer_card">
+          <div class="food_answer">Arroz</div>
+        </div>
+        <div class="answer_card">
+          <div class="food_answer">Trigo</div>
+        </div>
+        <div class="answer_card">
+          <div class="food_answer">Banana</div>
+        </div>
+        <div class="answer_card">
+          <div class="food_answer">Tomate</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="progress">
+      <div>Acertos: <span id="score">0</span></div>
+      <div>Progresso: <span id="round">0</span> / 5</div>
+    </div>
+  </div>
+
+  <div id="game_over_screen" class="screen">
+    <h1>Fim do jogo</h1>
+    <h2 id="final_message"></h2>
+    <h2>Sua pontuação final foi: <span id="final_score"></span></h2>
+    <button id="start_btn" onclick="startGame()">Jogar novamente?</button>
+  </div>
+</body>
+</html>
