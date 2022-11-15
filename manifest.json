@@ -1,0 +1,7 @@
+{
+  "name": "Cesta basica trivia",
+  "short_name": "CBTrivia",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
