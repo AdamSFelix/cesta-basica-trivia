@@ -80,7 +80,7 @@ function checkAnswer(answer) {
   const isRight = answer.innerHTML === right_name
   answer.classList.add(isRight ? 'right' : 'wrong')
   score += isRight ? 1 : 0
-  changeAnswerImage('images/foods/1.png')
+  changeAnswerImage(`images/foods/${answer_index}.png`)
   document.getElementById('score').innerHTML = score
   setTimeout(startRound, 3000)
 }
