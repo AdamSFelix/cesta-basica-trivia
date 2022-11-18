@@ -131,6 +131,16 @@ h2 {
   font-size: 32px;
 }
 
+.group_name {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 22px;
+}
+
+#group_container {
+  margin-top: 20%;
+}
+
 /* NORMALIZATON */
 
 html {
